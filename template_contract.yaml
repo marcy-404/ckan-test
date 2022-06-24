@@ -1,0 +1,157 @@
+scheming_version: 1
+dataset_type: contract
+
+dataset_fields: 
+
+- field_name: name
+  label: Name
+  form_placeholder: eg. Contract XYZ
+  required: true 
+  
+- field_name: notes
+  label: Description
+  form_snippet: markdown.html
+  form_placeholder: eg. Some useful notes about the data
+  
+- field_name: tag_string
+  label: Tags
+  preset: tag_string_autocomplete
+  form_placeholder: eg. economical, tech, governance
+
+- field_name: provider_reference 
+  label: Provider Reference 
+  form_placeholder: eg. Provider XYZ
+  required: true 
+  
+- field_name: pco_reference
+  label: PCO Reference 
+  form_placeholder: eg. Product ref
+  required: true 
+ 
+- field_name: contract_entity_coverage
+  label: Contract Entity Coverage 
+  preset: select
+  choices:
+  - value: group
+    label: GROUP
+  - value: pam
+    label: PAM
+  - value: bpsa
+    label: BPSA
+  - value: pam_gva
+    label: PAM GVA
+    
+- field_name: provider
+  label: Provider
+  preset: select
+  choices: 
+  - value: provider1
+    label: Provider 1
+  - value: provider2
+    label: Provider 2 
+    
+- field_name: usage
+  label: Usage
+  preset: markdown
+  form_placeholder: eg. Some basic usage of the contract
+  
+- field_name: storage
+  label: Storage
+  preset: radio 
+  choices:
+  - value: "yes" 
+    label: "Yes" 
+  - value: "no" 
+    label: "No"
+    
+- field_name: usage_restriction_storage
+  label: Usage Restriction Storage
+  form_placeholder: eg. If there is any, some restrictions about the storage of the contract
+    
+- field_name: derivation
+  label: Derivation
+  preset: radio 
+  choices:
+  - value: "yes" 
+    label: "Yes" 
+  - value: "no" 
+    label: "No" 
+    
+- field_name: usage_restriction_derivation
+  label: Usage Restriction Derivation
+  form_placeholder: eg. If there is any, some restrictions about the derivation of the contract
+    
+- field_name: distribution
+  label: Distribution
+  preset: radio 
+  choices:
+  - value: "yes" 
+    label: "Yes" 
+  - value: "no" 
+    label: "No" 
+    
+- field_name: usage_restriction_distribution
+  label: Usage Restriction Distribution
+  form_placeholder: eg. If there is any, some restrictions about the distribution of the contract
+    
+- field_name: display
+  label: Display
+  preset: radio 
+  choices:
+  - value: "yes" 
+    label: "Yes" 
+  - value: "no"
+    label: "No" 
+
+- field_name: usage_restriction_display
+  label: Usage Restriction Display
+  form_placeholder: eg. If there is any, some restrictions about the display of the contract
+    
+- field_name: cloud
+  label: Cloud
+  preset: radio 
+  choices:
+  - value: "yes"
+    label: "Yes" 
+  - value: "no" 
+    label: "No" 
+    
+- field_name: cloud_information
+  label: Cloud Information 
+  form_placeholder: eg. If there is any, some cloud information about the contract
+     
+- field_name: distributed_to
+  label: Distributed to
+  preset: multiple_checkbox
+  choices: 
+  - value: product1
+    label: Product 1
+  - value: product2
+    label: Product 2
+  - value: product3
+    label: Product 3
+  - value: product4
+    label: Product 4
+    
+- field_name: licensed_users
+  label: Licensed users
+  preset: multiple_checkbox
+  choices: 
+  - value: gregory
+    label: Grégory
+  - value: benjamin
+    label: Benjamin
+  - value: gregoire
+    label: Grégoire
+    
+- field_name: license_type
+  label: License Type
+  form_placeholder: The type of license assigned to this contract
+  
+resource_fields:
+
+- field_name: name
+  label: Name
+  
+
+  
