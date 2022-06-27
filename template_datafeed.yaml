@@ -2,125 +2,121 @@ scheming_version: 1
 dataset_type: datafeeds
 
 dataset_fields:
+  - field_name: name
+    label: Name
+    required: true
 
-- field_name: name
-  label: Name
-  required: true 
-  
-- field_name: notes
-  label: Description
-  form_snippet: markdown.html
-  form_placeholder: eg. Some useful notes about the data
-  
-- field_name: tag_string
-  label: Tags
-  preset: tag_string_autocomplete
-  form_placeholder: eg. economical, tech, governance
-  
-- field_name: provider
-  label: Provider
-  preset: select
-  choices: 
-  - value: provider1
-    label: Provider 1
-  - value: provider2
-    label: Provider 2 
-    
-- field_name: distributed_to
-  label: Distributed to
-  preset: multiple_checkbox
-  choices: 
-  - value: product1
-    label: Product 1
-  - value: product2
-    label: Product 2
-  - value: product3
-    label: Product 3
-  - value: product4
-    label: Product 4
-    
-- field_name: notifications
-  label: Notifications
-  preset: radio 
-  choices:
-  - value: "yes" 
-    label: "Yes" 
-  - value: "no"
-    label: "No" 
-    
-- field_name: technical_info
-  label: Technical Info
-  
-- field_name: classification_code
-  label: Classification Code
-  preset: select
-  choices:
-  - value: def
-    label: DEF 
-  - value: cur
-    label: CUR
-  - value: man
-    label: MAN
-  - value: cer
-    label: CER
-    
-- field_name: classification
-  label: Classification
-  preset: select
-  choices:
-  - value: defined
-    label: Defined
-  - value: curated
-    label: Curated
-  - value: managed
-    label: Managed
-  - value: certified
-    label: Certified
-    
-- field_name: data_consumer
-  label: Data Consumer 
-  
-- field_name: usage
-  label: Usage
-  preset: markdown
-  form_placeholder: eg. Some basic usage of the contract
-  
-- field_name: channel
-  label: Channel
-  
-- field_name: contact_provider
-  label: Contact Provider
-  
-- field_name: data_steward
-  label: Data Steward
-  
-- field_name: data_coverage
-  label: Data Coverage
-  
-- field_name: data_sponsor
-  label: Data Sponsor
-  
-- field_name: historical_data
-  label: Historical Data
-  
-- field_name: frequency
-  label: Frequency
-  
-- field_name: user_tech
-  label: User Tech 
-  
-- field_name: medium
-  label: Medium
-  
-- field_name: subject_matter_expert
-  label: Subject Matter Expert
-  
-- field_name: provider_stewardship_methodology
-  label: Provider Stewardship / Methodology
-  
+  - field_name: notes
+    label: Description
+    form_snippet: markdown.html
+    form_placeholder: eg. Some useful notes about the data
+
+  - field_name: tag_string
+    label: Tags
+    preset: tag_string_autocomplete
+    form_placeholder: eg. economical, tech, governance
+
+  - field_name: provider
+    label: Provider
+    preset: select
+    choices:
+      - value: provider1
+        label: Provider 1
+      - value: provider2
+        label: Provider 2
+
+  - field_name: distributed_to
+    label: Distributed to
+    preset: multiple_checkbox
+    choices:
+      - value: product1
+        label: Product 1
+      - value: product2
+        label: Product 2
+      - value: product3
+        label: Product 3
+      - value: product4
+        label: Product 4
+
+  - field_name: notifications
+    label: Notifications
+    preset: radio
+    choices:
+      - value: "yes"
+        label: "Yes"
+      - value: "no"
+        label: "No"
+
+  - field_name: technical_info
+    label: Technical Info
+
+  - field_name: classification_code
+    label: Classification Code
+    preset: select
+    choices:
+      - value: def
+        label: DEF
+      - value: cur
+        label: CUR
+      - value: man
+        label: MAN
+      - value: cer
+        label: CER
+
+  - field_name: classification
+    label: Classification
+    preset: select
+    choices:
+      - value: defined
+        label: Defined
+      - value: curated
+        label: Curated
+      - value: managed
+        label: Managed
+      - value: certified
+        label: Certified
+
+  - field_name: data_consumer
+    label: Data Consumer
+
+  - field_name: usage
+    label: Usage
+    preset: markdown
+    form_placeholder: eg. Some basic usage of the contract
+
+  - field_name: channel
+    label: Channel
+
+  - field_name: contact_provider
+    label: Contact Provider
+
+  - field_name: data_steward
+    label: Data Steward
+
+  - field_name: data_coverage
+    label: Data Coverage
+
+  - field_name: data_sponsor
+    label: Data Sponsor
+
+  - field_name: historical_data
+    label: Historical Data
+
+  - field_name: frequency
+    label: Frequency
+
+  - field_name: user_tech
+    label: User Tech
+
+  - field_name: medium
+    label: Medium
+
+  - field_name: subject_matter_expert
+    label: Subject Matter Expert
+
+  - field_name: provider_stewardship_methodology
+    label: Provider Stewardship / Methodology
+
 resource_fields:
-
-- field_name: name
-  label: Name
-  
-
+  - field_name: name
+    label: Name
